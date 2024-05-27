@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+:root {
+    --backgroud-header: #FFFFFF;
+    --border-header: #8B949E;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+header nav{
+    padding: 7px 45px;
+    display: flex;
+    justify-content: space-between; /*Deixar espaço entre a logo e o menu.*/
+    align-items: center;
+    background-color: var(--backgroud-header);
+    box-shadow: 0px 2px 20px #012a705b;
+}
+
+header ul{
+    list-style: none;
+    line-height: 0;
+}
+
+header nav .logo{
+    width: 240px;
+}
+
+header nav .logo a{
+    text-decoration: none;
+}
+
+header nav .logo a h1{
+    width: 100%; /*Tamanho de acordo com o nav .logo(responsivo)*/
+    font-size: 2.2rem;
+}
+
+.classEco,
+.classConexão {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+header nav ul li a{
+
+    background-image: 
+    linear-gradient(
+        transparent 0%,
+        transparent 90%,
+        #009FFF 93%,
+        #009FFF 100%
+    );
+
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+
+    transition: background-size 450ms, color 450ms; /*1s = 1000ms*/
+}
+
+header nav ul li a:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+    color: #009FFF; /*#8B949E*/
+}
+
+header nav ul:hover li a:not(:hover) {
+    color: #8B949E;
+}
+
+header nav ul:hover li:nth-child(5) a:not(:hover) {
+    color: #000000;
+}
+
+header .menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+header .menu-icon img{
+    width: 4em;
+    margin: 0em 6px;
+}
+
+@media (max-width:770px) {
+    header .menu-icon{
+        display: block;
+        z-index: 10;
+    }
+
+    header nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 88%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in;
+        background-color: #ffffffc7;
+    }
+
+    header nav ul.open{
+        transform: translateX(0);
+    }
+
+    header nav ul li{
+        margin: 10px 0;
+    }
+
+    header nav ul li a{
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width:495px) {
+    header nav ul {
+        width: 88%;
+    }
+}
+
+@media (max-width:340px) {
+    header nav {
+        padding: 7px 27px;
+    }
+
+    header nav ul li a{
+        font-size: 1.4rem;
+    }
+}

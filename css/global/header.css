@@ -3,21 +3,49 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
 header nav {
-  background-color: #24292e;
+  padding: 7px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 20px rgba(1, 42, 112, 0.3568627451);
+  background-color: #fafbfc;
 }
 header nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
+  list-style: none;
+  line-height: 0;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+  color: #009FFF;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 1.4em;
-  padding: 0.4em;
-  color: #ffffff;
+  font-size: 22px;
 }
-header nav ul a:hover {
-  cursor: crosshair;
+header nav ul li a {
+  background-image: linear-gradient(transparent 0%, transparent 90%, #009FFF 93%, #009FFF 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 450ms, color 450ms; /*1s = 1000ms*/
+}
+header nav ul li a:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+  color: #009FFF; /*#8B949E*/
+}
+header nav ul:hover li a:not(:hover) {
+  color: #2b3137;
+}
+header nav ul:hover li:nth-child(5) a:not(:hover) {
+  color: #24292e;
 }
 
 /*# sourceMappingURL=header.css.map */
