@@ -10,17 +10,34 @@ header {
 }
 header nav {
   padding: 7px 45px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   box-shadow: 0px 2px 20px rgba(1, 42, 112, 0.3568627451);
   background-color: #fafbfc;
 }
-header nav ul {
+header nav .logo {
+  position: fixed;
+  top: 4.5%; /*7%*/
+  left: 50%;
+  transform: translateX(-50%);
+}
+header nav .logo a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  background-color: #fafbfc;
+  box-shadow: 0px 1px 1px 0px rgba(1, 42, 112, 0.3568627451);
+  padding: 10px;
+  border-radius: 0em 0em 1em 1em;
+}
+header nav .menu-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+header nav .menu-wrapper ul {
   list-style: none;
   line-height: 0;
+  /*width: 23em;*/
 }
-header nav ul li {
+header nav .menu-wrapper ul li {
   display: inline-block;
   padding: 10px;
   vertical-align: middle;
@@ -29,22 +46,22 @@ header nav ul li {
   font-weight: 700;
   font-size: 22px;
 }
-header nav ul li a {
+header nav .menu-wrapper ul li a {
   background-image: linear-gradient(transparent 0%, transparent 90%, #009FFF 93%, #009FFF 100%);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   background-position-x: right;
   transition: background-size 450ms, color 450ms; /*1s = 1000ms*/
 }
-header nav ul li a:hover {
+header nav .menu-wrapper ul li a:hover {
   background-size: 100% 100%;
   background-position-x: left;
   color: #009FFF; /*#8B949E*/
 }
-header nav ul:hover li a:not(:hover) {
+header nav .menu-wrapper ul:hover li a:not(:hover) {
   color: #2b3137;
 }
-header nav ul:hover li:nth-child(5) a:not(:hover) {
+header nav .menu-wrapper ul:hover li:nth-child(5) a:not(:hover) {
   color: #24292e;
 }
 
