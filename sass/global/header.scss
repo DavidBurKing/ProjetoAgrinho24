@@ -15,33 +15,58 @@ header {
 
         background-color: $github-cinza-suave;
 
-        .logo {
-            position: fixed;
-
-            top: 4.5%; /*7%*/
-            left: 50%;
-            transform: translateX(-50%);
-
-            a {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 700;
-                font-size: 1.4em;
-                background-color: $github-cinza-suave;
-                box-shadow: 0px 1px 1px 0px #012a705b;
-
-                padding: 10px;
-                border-radius: 0em 0em 1em 1em;   
-            }
-        }
-
         .menu-wrapper {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: rgb(0 0 0 / 29%) 0px 0px 8px;
+            width: 54em;
+            margin: 0 auto;
+
+            .logo {
+                padding: 0em 0.4em;
+                /*position: fixed;
+    
+                top: 4.5%; 7%
+                left: 50%;
+                transform: translateX(-50%);*/
+    
+                a {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    font-size: 2.2em;
+                    background-color: $github-cinza-suave;
+
+                    color: brown;
+
+                    .tech {
+                        color: #0074D9;
+                    }
+
+                    &:hover {
+                        color: #0074D9;
+
+                        span:hover {
+                            color: brown;
+                        }
+                    }
+                }
+            }
+
+            .separator {
+                width: 1px; /* Largura da barra */
+                height: 20px; /* Altura da barra (ajuste conforme necessário) */
+                background-color: #000; /* Cor da barra */
+                margin: 0 10px; /* Espaçamento igual nos dois lados da barra */
+            }
 
             ul {
                 list-style: none;
                 line-height: 0;
-                /*width: 23em;*/
+
     
                 li {
                     display: inline-block;
