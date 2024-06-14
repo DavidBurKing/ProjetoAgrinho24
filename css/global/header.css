@@ -45,7 +45,7 @@ header nav .menu-wrapper .logo a .tech {
 header nav .menu-wrapper .logo a:hover {
   color: #0074D9;
 }
-header nav .menu-wrapper .logo a:hover span:hover {
+header nav .menu-wrapper .logo a:hover span {
   color: brown;
 }
 header nav .menu-wrapper .separator {
