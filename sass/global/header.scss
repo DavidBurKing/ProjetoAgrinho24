@@ -110,6 +110,48 @@ header {
                     }
                 }
             }
+
+            .menu-icon {
+                display: none;
+    
+                img {
+                    width: 4em;
+                    margin: 0em 6px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:770px) {
+    header {
+        nav {
+
+            .menu-wrapper {
+                ul {
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    width: 88%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    transform: translateX(100%);
+                    transition: transform 0.6s ease-in;
+                    background-color: #ffffffc7;
+                }
+    
+                ul.open {
+                    transform: translateX(0);
+                }
+    
+                .menu-icon {
+                    display: block;
+                    z-index: 10;
+                }
+            }
         }
     }
 }
