@@ -76,7 +76,7 @@ header {
                     
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 700;
-                    font-size: 22px;
+                    font-size: 1.3em;
                     
                     a {
                         background-image: 
@@ -123,9 +123,20 @@ header {
     }
 }
 
+@media (max-width:1000px) {
+    header {
+        nav {
+            .menu-wrapper{
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media (max-width:770px) {
     header {
         nav {
+            padding: 7px 10%;
 
             .menu-wrapper {
                 ul {

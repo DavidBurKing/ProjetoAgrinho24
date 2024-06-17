@@ -65,7 +65,7 @@ header nav .menu-wrapper ul li {
   color: #009FFF;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.3em;
 }
 header nav .menu-wrapper ul li a {
   background-image: linear-gradient(transparent 0%, transparent 90%, #009FFF 93%, #009FFF 100%);
@@ -93,7 +93,15 @@ header nav .menu-wrapper .menu-icon img {
   margin: 0em 6px;
 }
 
+@media (max-width: 1000px) {
+  header nav .menu-wrapper {
+    width: 100%;
+  }
+}
 @media (max-width: 770px) {
+  header nav {
+    padding: 7px 10%;
+  }
   header nav .menu-wrapper ul {
     position: fixed;
     top: 0;
