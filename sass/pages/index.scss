@@ -1,0 +1,24 @@
+@import "../variables/colors/colors.scss";
+
+@import "../variables/common/breakpoint.scss";
+
+@import "../variables/fonts/fonts.scss";
+
+main {
+    padding: 6em 0em 0em 0em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.PrincipalContainer {
+    .ApresentaçãoTC {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .ApresentaçãoTC-title {
+            position: absolute;
+            font-weight: bolder;
+            font-size: 2em;
+        }
+    }
+}
