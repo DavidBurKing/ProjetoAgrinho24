@@ -5,7 +5,6 @@
 @import "../variables/fonts/fonts.scss";
 
 main {
-    padding: 6em 0em 0em 0em;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,10 +14,36 @@ main {
         justify-content: center;
         align-items: center;
         
-        .ApresentaçãoTC-title {
+        .TCardContent {
+
             position: absolute;
-            font-weight: bolder;
-            font-size: 2em;
+            color: white;
+            z-index: 10;
+
+            .TCardTitle {
+                font-family: 'Roboto', sans-serif;
+                font-size: 3.4em;
+                font-weight: 600;
+            }
+
+            .TCardDescription {
+                font-size: 1.3em;
+                font-weight: 500;
+            }
+        }
+
+        .TCardImage {
+            width: 100%;
+
+            img {
+                width: 100%; /*A imagem ocupará 100% da largura do site*/
+                height: 25em; /*Altura fixa de 20em*/
+                object-fit: cover; /*A imagem manterá a proporção e cortará o excesso para preencher a altura*/
+            }
         }
     }
+}
+
+@media (max-width:1000px) {
+
 }
