@@ -42,6 +42,26 @@ main {
             }
         }
     }
+
+    .OverViewCard {
+
+        margin: 3em 3em;
+
+        .OverViewCardContent {
+            text-align: center;
+            font-weight: bold;
+            color: #15803D;
+
+            .OverViewCardTitle {
+                font-size: 2.4em;
+            }
+
+            .OverViewCardDescription {
+                text-align: justify;
+                font-size: 1.7em;
+            }
+        }
+    }
 }
 
 @media (max-width:1000px) {
