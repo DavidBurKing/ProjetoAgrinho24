@@ -52,5 +52,43 @@ main {
   text-align: justify;
   font-size: 1.7em;
 }
+.PrincipalContainer .Ideias {
+  background-color: #505F04;
+  color: white;
+}
+.PrincipalContainer .Ideias .IdeiasTitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.PrincipalContainer .Ideias .IdeiasCard {
+  display: flex;
+  align-items: center;
+}
+.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent {
+  width: 50%;
+  font-weight: 600;
+}
+.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent .IdeiasCardTitle {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent .IdeiasCardDescription {
+  width: 396px;
+  margin: 0em auto;
+  text-align: justify;
+}
+.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent:nth-child(2) {
+  background-color: white;
+}
+.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardImg {
+  width: 50%;
+}
+.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardImg img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=index.css.map */

@@ -50,7 +50,7 @@ main {
         .OverViewCardContent {
             text-align: center;
             font-weight: bold;
-            color: #15803D;
+            color: $dark-green;
 
             .OverViewCardTitle {
                 font-size: 2.4em;
@@ -59,6 +59,53 @@ main {
             .OverViewCardDescription {
                 text-align: justify;
                 font-size: 1.7em;
+            }
+        }
+    }
+
+    .Ideias {
+        background-color: $dark-olive-green;
+        color: white;
+
+        .IdeiasTitle {
+            text-align: center;
+            font-weight: 700;
+            font-size: 3rem;
+        }
+
+        .IdeiasCard {
+            display: flex;
+            align-items: center;
+
+            .IdeiasCardContent {
+                width: 50%;
+                font-weight: 600;
+                
+                .IdeiasCardTitle {
+                    text-align: center;
+                    font-size: 2rem;
+                    line-height: 2.25rem;
+                }
+
+                .IdeiasCardDescription {
+                    width: 396px;
+                    margin: 0em auto;
+                    text-align: justify;
+                }
+
+                &:nth-child(2) {
+                    background-color: white;
+                }
+            }
+
+            .IdeiasCardImg {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                    height: 20em;
+                    object-fit: cover;
+                }
             }
         }
     }
