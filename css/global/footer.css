@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: "Montserrat Subrayada", sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: "Josefin Sans", sans-serif;
+*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #505F04;
+  color: white;
+  font-weight: 600;
+}
+footer .footerContent .footerTitle {
+  font-size: 1.75rem;
+}
+footer .footerContent a {
+  font-size: 1.0625rem;
+  background-image: linear-gradient(transparent 0%, transparent 90%, white 93%, white 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 450ms, color 450ms;
+}
+footer .footerContent a:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+footer .footerNav div {
+  display: grid;
+}
+footer .footerNav div a {
+  text-decoration: underline;
+  transition: all 450ms;
+}
+footer .footerNav div:hover a:not(:hover) {
+  color: #8B949E;
+}
+
+/*# sourceMappingURL=footer.css.map */

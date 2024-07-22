@@ -53,10 +53,10 @@ main {
   font-size: 1.7em;
 }
 .PrincipalContainer .Ideias {
-  background-color: #505F04;
   color: white;
 }
 .PrincipalContainer .Ideias .IdeiasTitle {
+  background-color: #505F04;
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
@@ -64,6 +64,13 @@ main {
 .PrincipalContainer .Ideias .IdeiasCard {
   display: flex;
   align-items: center;
+  background-color: #505F04;
+}
+.PrincipalContainer .Ideias .IdeiasCard:nth-of-type(2) {
+  background-color: white;
+}
+.PrincipalContainer .Ideias .IdeiasCard:nth-of-type(2) .IdeiasCardContent {
+  color: #239D12;
 }
 .PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent {
   width: 50%;
@@ -78,9 +85,6 @@ main {
   width: 396px;
   margin: 0em auto;
   text-align: justify;
-}
-.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent:nth-child(2) {
-  background-color: white;
 }
 .PrincipalContainer .Ideias .IdeiasCard .IdeiasCardImg {
   width: 50%;

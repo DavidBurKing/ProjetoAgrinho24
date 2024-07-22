@@ -64,10 +64,10 @@ main {
     }
 
     .Ideias {
-        background-color: $dark-olive-green;
         color: white;
 
         .IdeiasTitle {
+            background-color: $dark-olive-green;
             text-align: center;
             font-weight: 700;
             font-size: 3rem;
@@ -76,6 +76,15 @@ main {
         .IdeiasCard {
             display: flex;
             align-items: center;
+            background-color: $dark-olive-green;
+
+            &:nth-of-type(2) {
+                background-color: white;
+
+                .IdeiasCardContent {
+                    color: $vivid-green;
+                }
+            }
 
             .IdeiasCardContent {
                 width: 50%;
@@ -91,10 +100,6 @@ main {
                     width: 396px;
                     margin: 0em auto;
                     text-align: justify;
-                }
-
-                &:nth-child(2) {
-                    background-color: white;
                 }
             }
 
