@@ -11,7 +11,7 @@ header {
 
     nav {
         padding: 7px 45px;
-        box-shadow: 0px 2px 20px #012a705b;
+        //box-shadow: 0px 2px 20px #012a705b;
 
         background-color: #0000006b;
 
@@ -41,17 +41,14 @@ header {
                     font-size: 2.2em;
 
                     color: brown;
+                    transition: all 0.5s ease-out;
 
                     .tech {
-                        color: #0074D9;
+                        color: $brilliant-azure;
                     }
 
                     &:hover {
-                        color: #0074D9;
-
-                        span {
-                            color: brown;
-                        }
+                        font-size: 2.3em
                     }
                 }
             }
@@ -72,7 +69,7 @@ header {
                     display: inline-block;
                     padding: 10px;
                     vertical-align: middle;
-                    color: $blue;
+                    color: $brilliant-azure;
                     
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 700;
@@ -83,8 +80,8 @@ header {
                         linear-gradient(
                             transparent 0%,
                             transparent 90%,
-                            $blue 93%,
-                            $blue 100%
+                            $brilliant-azure 93%,
+                            $brilliant-azure 100%
                         );
                     
                         background-repeat: no-repeat;
@@ -96,7 +93,7 @@ header {
                         &:hover {
                             background-size: 100% 100%;
                             background-position-x: left;
-                            color: $blue; /*#8B949E*/
+                            color: $brilliant-azure; /*#8B949E*/
                         }
                     }
                 }

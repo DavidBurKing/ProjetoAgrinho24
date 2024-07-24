@@ -13,7 +13,6 @@ header {
 }
 header nav {
   padding: 7px 45px;
-  box-shadow: 0px 2px 20px rgba(1, 42, 112, 0.3568627451);
   background-color: rgba(0, 0, 0, 0.4196078431);
 }
 header nav .menu-wrapper {
@@ -40,15 +39,13 @@ header nav .menu-wrapper .logo a {
   font-weight: 700;
   font-size: 2.2em;
   color: brown;
+  transition: all 0.5s ease-out;
 }
 header nav .menu-wrapper .logo a .tech {
-  color: #0074D9;
+  color: #009FFF;
 }
 header nav .menu-wrapper .logo a:hover {
-  color: #0074D9;
-}
-header nav .menu-wrapper .logo a:hover span {
-  color: brown;
+  font-size: 2.3em;
 }
 header nav .menu-wrapper .separator {
   width: 1px; /* Largura da barra */

@@ -13,9 +13,14 @@ footer {
   background-color: #505F04;
   color: white;
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
 footer .footerContent .footerTitle {
   font-size: 1.75rem;
+  color: brown;
+}
+footer .footerContent .footerTitle .tech {
+  color: #009FFF;
 }
 footer .footerContent a {
   font-size: 1.0625rem;

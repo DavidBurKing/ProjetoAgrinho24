@@ -13,12 +13,16 @@ footer {
     background-color: $dark-olive-green;
     color: white;
     font-weight: 600;
-
-    
+    font-family: 'Montserrat', sans-serif;
 
     .footerContent {
         .footerTitle {
             font-size: 1.75rem; //28px
+            color: brown;
+
+            .tech {
+                color: $brilliant-azure;
+            }
         }
 
         a {

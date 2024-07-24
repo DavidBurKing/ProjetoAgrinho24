@@ -19,6 +19,7 @@ main {
             position: absolute;
             color: white;
             z-index: 10;
+            padding: 0em 1em;
 
             .TCardTitle {
                 font-family: 'Roboto', sans-serif;
@@ -116,6 +117,75 @@ main {
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:800px) {
+    .PrincipalContainer {
+        .Ideias {
+            .IdeiasCard {
+                flex-direction: column;
+        
+                .IdeiasCardContent, .IdeiasCardImg {
+                    width: 100%;
+                }
 
+                .IdeiasCardContent {
+                    padding-top: 0.875rem;
+                    padding-bottom: 0.875rem;
+                }
+            }
+    
+            .IdeiasCard:nth-child(2) {
+                .IdeiasCardContent:nth-child(1) {
+                    order: 2;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:690px) {
+    .PrincipalContainer {
+        .ApresentaçãoTC {
+            .TCardContent {
+                text-align: center;
+
+                .TCardTitle {
+                    font-size: 2.7em;
+                }
+            }
+        }
+
+        .OverViewCard {
+            .OverViewCardContent {
+                .OverViewCardDescription {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .PrincipalContainer {
+
+        .OverViewCard {
+            .OverViewCardContent {
+                .OverViewCardDescription {
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                }
+            }
+        }
+
+        .Ideias {
+            .IdeiasCard {
+                .IdeiasCardContent {
+                    .IdeiasCardDescription {
+                        width: auto;
+                        margin: 0em 1em;
+                    }
+                }
+            }
+        }
+    }
 }
