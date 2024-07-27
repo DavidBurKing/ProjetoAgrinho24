@@ -101,6 +101,9 @@ header nav .menu-wrapper .menu-icon img {
   header nav {
     padding: 7px 10%;
   }
+  header nav .menu-wrapper {
+    justify-content: space-evenly;
+  }
   header nav .menu-wrapper ul {
     position: fixed;
     top: 0;
