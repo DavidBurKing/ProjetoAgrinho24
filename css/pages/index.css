@@ -37,6 +37,7 @@ main {
   width: 100%; /*A imagem ocupará 100% da largura do site*/
   height: 25em; /*Altura fixa de 20em*/
   object-fit: cover; /*A imagem manterá a proporção e cortará o excesso para preencher a altura*/
+  filter: brightness(0.5);
 }
 .PrincipalContainer .OverViewCard {
   margin: 3em 3em;
@@ -53,61 +54,78 @@ main {
   text-align: justify;
   font-size: 1.7em;
 }
-.PrincipalContainer .Ideias {
+.PrincipalContainer .Assuntos {
   color: white;
 }
-.PrincipalContainer .Ideias .IdeiasTitle {
+.PrincipalContainer .Assuntos .AssuntosTitle {
   background-color: #505F04;
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
 }
-.PrincipalContainer .Ideias .IdeiasCard {
+.PrincipalContainer .Assuntos .AssuntosCard {
   display: flex;
   align-items: center;
   background-color: #505F04;
 }
-.PrincipalContainer .Ideias .IdeiasCard:nth-of-type(2) {
+.PrincipalContainer .Assuntos .AssuntosCard:nth-of-type(2) {
   background-color: white;
 }
-.PrincipalContainer .Ideias .IdeiasCard:nth-of-type(2) .IdeiasCardContent {
+.PrincipalContainer .Assuntos .AssuntosCard:nth-of-type(2) .AssuntosCardContent {
   color: #239D12;
 }
-.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent {
+.PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardContent {
   width: 50%;
   font-weight: 600;
 }
-.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent .IdeiasCardTitle {
+.PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardContent .AssuntosCardTitle {
   text-align: center;
   font-size: 2rem;
   line-height: 2.25rem;
 }
-.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent .IdeiasCardDescription {
+.PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardContent .AssuntosCardDescription {
   width: 396px;
   margin: 0em auto;
   text-align: justify;
 }
-.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardImg {
+.PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardCarrosel {
+  overflow: hidden;
+  white-space: nowrap;
   width: 50%;
+  font-size: 0px;
 }
-.PrincipalContainer .Ideias .IdeiasCard .IdeiasCardImg img {
-  width: 100%;
-  height: 20em;
+@keyframes Carrosel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardCarrosel .AssuntosCardImg {
+  display: inline-block;
+  animation: 25s Carrosel infinite linear;
+}
+.PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardCarrosel .AssuntosCardImg img {
+  display: inline-block;
+  max-width: none;
   object-fit: cover;
+  height: 20em;
+  font-size: 1rem;
 }
 
 @media (max-width: 800px) {
-  .PrincipalContainer .Ideias .IdeiasCard {
+  .PrincipalContainer .Assuntos .AssuntosCard {
     flex-direction: column;
   }
-  .PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent, .PrincipalContainer .Ideias .IdeiasCard .IdeiasCardImg {
+  .PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardContent, .PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardCarrosel {
     width: 100%;
   }
-  .PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent {
+  .PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardContent {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
   }
-  .PrincipalContainer .Ideias .IdeiasCard:nth-child(2) .IdeiasCardContent:nth-child(1) {
+  .PrincipalContainer .Assuntos .AssuntosCard:nth-child(2) .AssuntosCardContent:nth-child(1) {
     order: 2;
   }
 }
@@ -128,7 +146,7 @@ main {
     font-size: 1.2rem;
     line-height: 1.45rem;
   }
-  .PrincipalContainer .Ideias .IdeiasCard .IdeiasCardContent .IdeiasCardDescription {
+  .PrincipalContainer .Assuntos .AssuntosCard .AssuntosCardContent .AssuntosCardDescription {
     width: auto;
     margin: 0em 1em;
   }

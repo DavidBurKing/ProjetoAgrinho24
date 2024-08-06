@@ -40,6 +40,7 @@ main {
                 width: 100%; /*A imagem ocupará 100% da largura do site*/
                 height: 25em; /*Altura fixa de 20em*/
                 object-fit: cover; /*A imagem manterá a proporção e cortará o excesso para preencher a altura*/
+                filter: brightness(0.5);
             }
         }
     }
@@ -64,17 +65,17 @@ main {
         }
     }
 
-    .Ideias {
+    .Assuntos {
         color: white;
 
-        .IdeiasTitle {
+        .AssuntosTitle {
             background-color: $dark-olive-green;
             text-align: center;
             font-weight: 700;
             font-size: 3rem;
         }
 
-        .IdeiasCard {
+        .AssuntosCard {
             display: flex;
             align-items: center;
             background-color: $dark-olive-green;
@@ -82,35 +83,55 @@ main {
             &:nth-of-type(2) {
                 background-color: white;
 
-                .IdeiasCardContent {
+                .AssuntosCardContent {
                     color: $vivid-green;
                 }
             }
 
-            .IdeiasCardContent {
+            .AssuntosCardContent {
                 width: 50%;
                 font-weight: 600;
                 
-                .IdeiasCardTitle {
+                .AssuntosCardTitle {
                     text-align: center;
                     font-size: 2rem;
                     line-height: 2.25rem;
                 }
 
-                .IdeiasCardDescription {
+                .AssuntosCardDescription {
                     width: 396px;
                     margin: 0em auto;
                     text-align: justify;
                 }
             }
 
-            .IdeiasCardImg {
+            .AssuntosCardCarrosel {
+                overflow: hidden;
+                white-space: nowrap;
                 width: 50%;
+                font-size: 0px;
 
-                img {
-                    width: 100%;
-                    height: 20em;
-                    object-fit: cover;
+                @keyframes Carrosel {
+                    from {
+                        transform: translateX(0);
+                    }
+                    to {
+                        transform: translateX(-100%);
+                    }
+                }
+
+                .AssuntosCardImg {
+                    display: inline-block;
+
+                    animation: 25s Carrosel infinite linear;
+    
+                    img {
+                        display: inline-block;
+                        max-width: none;
+                        object-fit: cover;
+                        height: 20em;
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -119,22 +140,22 @@ main {
 
 @media (max-width:800px) {
     .PrincipalContainer {
-        .Ideias {
-            .IdeiasCard {
+        .Assuntos {
+            .AssuntosCard {
                 flex-direction: column;
         
-                .IdeiasCardContent, .IdeiasCardImg {
+                .AssuntosCardContent, .AssuntosCardCarrosel {
                     width: 100%;
                 }
 
-                .IdeiasCardContent {
+                .AssuntosCardContent {
                     padding-top: 0.875rem;
                     padding-bottom: 0.875rem;
                 }
             }
     
-            .IdeiasCard:nth-child(2) {
-                .IdeiasCardContent:nth-child(1) {
+            .AssuntosCard:nth-child(2) {
+                .AssuntosCardContent:nth-child(1) {
                     order: 2;
                 }
             }
@@ -179,10 +200,10 @@ main {
             }
         }
 
-        .Ideias {
-            .IdeiasCard {
-                .IdeiasCardContent {
-                    .IdeiasCardDescription {
+        .Assuntos {
+            .AssuntosCard {
+                .AssuntosCardContent {
+                    .AssuntosCardDescription {
                         width: auto;
                         margin: 0em 1em;
                     }

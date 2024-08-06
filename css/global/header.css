@@ -17,8 +17,8 @@ header nav {
 }
 header nav .menu-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
   padding: 5px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.29) 0px 0px 8px;
@@ -56,6 +56,8 @@ header nav .menu-wrapper .separator {
 header nav .menu-wrapper ul {
   list-style: none;
   line-height: 0;
+  text-align: center;
+  width: 458px;
 }
 header nav .menu-wrapper ul li {
   display: inline-block;
