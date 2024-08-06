@@ -13,7 +13,8 @@ header {
 }
 header nav {
   padding: 7px 45px;
-  background-color: rgba(0, 0, 0, 0.4196078431);
+  height: 2.5em;
+  background-color: rgb(255, 255, 255);
 }
 header nav .menu-wrapper {
   display: flex;
@@ -22,7 +23,7 @@ header nav .menu-wrapper {
   padding: 5px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.29) 0px 0px 8px;
-  background-color: rgba(0, 0, 0, 0.5490196078);
+  background-color: rgb(255, 255, 255);
   width: 54em;
   margin: 0 auto;
 }

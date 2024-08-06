@@ -6,15 +6,47 @@ font-family: "Montserrat Subrayada", sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: "Josefin Sans", sans-serif;
 */
-.main-content {
+.main-container {
+  font-family: "Montserrat", sans-serif;
+}
+.main-container .TecnologiaSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .TecnologiaSection .TecnologiaContent {
+  position: absolute;
+  color: white;
+  z-index: 10;
+  padding: 0 2em;
+  text-align: center;
+  width: 70%;
+}
+.main-container .TecnologiaSection .TecnologiaContent .TecnologiaTitle {
+  font-size: 3.4em;
+  font-weight: 600;
+}
+.main-container .TecnologiaSection .TecnologiaContent .TecnologiaDescription {
+  font-size: 1.2em;
+}
+.main-container .TecnologiaSection .TecnologiaImage {
+  width: 100%;
+}
+.main-container .TecnologiaSection .TecnologiaImage img {
+  width: 100%; /*A imagem ocupará 100% da largura do site*/
+  height: 25em; /*Altura fixa de 20em*/
+  object-fit: cover; /*A imagem manterá a proporção e cortará o excesso para preencher a altura*/
+  filter: brightness(0.5);
+}
+.main-container .main-content {
   display: flex;
   position: relative;
 }
-.main-content .SeçõesContainer {
+.main-container .main-content .SeçõesContainer {
   flex: 1;
   padding: 0 20px;
 }
-.main-content .sidebar {
+.main-container .main-content .sidebar {
   width: 250px;
   background-color: #fff;
   border-left: 2px solid #e0e0e0; /* Alterado para borda à esquerda */
@@ -25,18 +57,18 @@ font-family: "Josefin Sans", sans-serif;
   height: 100vh; /* Ajusta a altura para ocupar a tela toda */
   overflow-y: auto; /* Adiciona barra de rolagem se necessário */
 }
-.main-content .sidebar h3 {
+.main-container .main-content .sidebar h3 {
   margin-bottom: 20px;
   font-size: 1.2em;
   color: #055216;
 }
-.main-content .sidebar .sidebar-nav ul {
+.main-container .main-content .sidebar .sidebar-nav ul {
   list-style: none;
 }
-.main-content .sidebar .sidebar-nav ul li {
+.main-container .main-content .sidebar .sidebar-nav ul li {
   margin-bottom: 10px;
 }
-.main-content .sidebar .sidebar-nav ul li a {
+.main-container .main-content .sidebar .sidebar-nav ul li a {
   display: block;
   padding: 8px 12px;
   border-radius: 4px;
@@ -45,20 +77,20 @@ font-family: "Josefin Sans", sans-serif;
   color: #0a431d;
   text-align: center;
 }
-.main-content .sidebar .sidebar-nav ul li a:hover {
+.main-container .main-content .sidebar .sidebar-nav ul li a:hover {
   background-color: #cfe9cf;
   color: #055216;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .main-content {
+  .main-container .main-content {
     flex-direction: column;
   }
-  .main-content .SeçõesContainer {
+  .main-container .main-content .SeçõesContainer {
     order: 2;
   }
-  .main-content .sidebar {
+  .main-container .main-content .sidebar {
     width: 100%;
     height: auto;
     border-left: none;

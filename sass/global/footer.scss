@@ -48,6 +48,10 @@ footer {
             }
         }
     }
+
+    .footerSeparator {
+        display: none;
+    }
     
     .footerNav {
         div {
@@ -64,6 +68,28 @@ footer {
                     color: #8B949E;
                 }
             }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    footer {
+        display: block;
+        padding: 1.5em 2em;
+
+        .footerContent {
+            padding: 0 0 1em 0;
+        }
+
+        .footerSeparator {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+        }
+    
+        .footerNav {
+            padding: 1em 0 0 0;
         }
     }
 }
