@@ -56,10 +56,12 @@ font-family: "Josefin Sans", sans-serif;
   top: 0; /* Fixa a barra ao topo da página ao rolar */
   height: 100vh; /* Ajusta a altura para ocupar a tela toda */
   overflow-y: auto; /* Adiciona barra de rolagem se necessário */
+  text-align: center;
 }
 .main-container .main-content .sidebar h3 {
   margin-bottom: 20px;
-  font-size: 1.2em;
+  font-size: 1.6em;
+  font-weight: bold;
   color: #055216;
 }
 .main-container .main-content .sidebar .sidebar-nav ul {
@@ -75,15 +77,29 @@ font-family: "Josefin Sans", sans-serif;
   background-color: #e0f2e0;
   font-weight: bold;
   color: #0a431d;
-  text-align: center;
 }
 .main-container .main-content .sidebar .sidebar-nav ul li a:hover {
   background-color: #cfe9cf;
   color: #055216;
 }
 
+@media (max-width: 1000px) {
+  .main-container .TecnologiaSection .TecnologiaContent {
+    width: 100%;
+  }
+  .main-container .TecnologiaSection .TecnologiaContent .TecnologiaTitle {
+    line-height: 1;
+  }
+}
 /* Responsividade */
 @media (max-width: 768px) {
+  .main-container .TecnologiaSection .TecnologiaContent .TecnologiaTitle {
+    font-size: 2.4em;
+    height: 2.2em;
+  }
+  .main-container .TecnologiaSection .TecnologiaContent .TecnologiaDescription {
+    font-size: 1em;
+  }
   .main-container .main-content {
     flex-direction: column;
   }

@@ -95,6 +95,10 @@ header nav .menu-wrapper .menu-icon img {
   margin: 0em 6px;
 }
 
+main {
+  padding: 5em 0;
+}
+
 @media (max-width: 1000px) {
   header nav .menu-wrapper {
     width: 100%;
@@ -127,6 +131,9 @@ header nav .menu-wrapper .menu-icon img {
   header nav .menu-wrapper .menu-icon {
     display: block;
     z-index: 10;
+  }
+  main {
+    padding: 5.5em 0;
   }
 }
 
