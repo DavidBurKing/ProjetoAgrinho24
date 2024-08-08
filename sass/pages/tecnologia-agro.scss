@@ -4,6 +4,9 @@
 
 @import "../variables/fonts/fonts.scss";
 
+html {
+    scroll-behavior: smooth;
+}
 
 .main-container {
     font-family: 'Montserrat', sans-serif;
@@ -50,13 +53,61 @@
         .SeçõesContainer {
             flex: 1;
             padding: 0 20px;
+
+            .Seções {
+                width: 100%;
+                margin: 2em auto;
+                border-radius: 1em;
+                background-color: $olive-green;
+                color: $light-gray;
+                scroll-margin: 30em;
+                box-shadow: 0px 4px 30px -16px #000000d5;
+
+                .SeçõesImg {
+                    padding: 0.6em 0.0 0 0;
+
+                    img {
+                        width: 30%;
+                        height: 100%;
+                        border-radius: 1em;
+                        object-fit: cover;
+                        margin: 0 auto;
+                    }
+
+                    .SeçõesTitle {
+                        padding: 0 0.6em;
+
+                        font-size: 2.5em;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        text-align: center;
+                    }
+                }
+
+                .SeçõesContent {
+                    padding: 0.5em;
+                    width: 50em;
+                    margin: 0 auto;
+                    text-align: justify;
+
+                    .SeçõesDescription {
+                        font-size: 1.5em;
+                        font-weight: 500;
+                    }
+                }
+
+                &:nth-child(even) {
+                    background-color: $light-gray;
+                    color: $olive-green;
+                }
+            }
         }
     
         .sidebar {
             width: 250px;
             background-color: #fff;
             border-left: 2px solid #e0e0e0; /* Alterado para borda à esquerda */
-            padding: 20px;
+            padding: 4em 20px;
             box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05); /* Sombra à esquerda */
             position: sticky;
             top: 0; /* Fixa a barra ao topo da página ao rolar */
@@ -109,6 +160,22 @@
                 }
             }
         }
+
+        .main-content {
+            .SeçõesContainer {
+                .Seções {
+                    .SeçõesImg {
+                        img {
+                            width: 100%;
+                        }   
+                    }
+
+                    .SeçõesContent {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -134,6 +201,21 @@
 
             .SeçõesContainer {
                 order: 2;
+                padding: 0 10px;
+
+                .Seções {
+                    .SeçõesImg {
+                        .SeçõesTitle {
+                            font-size: 2em;
+                        }
+                    }
+
+                    .SeçõesContent {
+                        .SeçõesDescription {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
             }
     
             .sidebar {
