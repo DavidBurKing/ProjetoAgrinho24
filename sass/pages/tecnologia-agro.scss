@@ -66,9 +66,11 @@ html {
                 .SeçõesImg {
                     padding: 0.6em 0.0 0 0;
 
-                    img {
+                    img, iframe {
                         width: 30%;
                         height: 100%;
+                        min-height: 234px;
+                        min-width: 410px;
                         border-radius: 1em;
                         object-fit: cover;
                         margin: 0 auto;
@@ -85,7 +87,7 @@ html {
                 }
 
                 .SeçõesContent {
-                    padding: 0.5em;
+                    padding: 1em;
                     width: 50em;
                     margin: 0 auto;
                     text-align: justify;
@@ -99,50 +101,6 @@ html {
                 &:nth-child(even) {
                     background-color: $light-gray;
                     color: $olive-green;
-                }
-            }
-        }
-    
-        .sidebar {
-            width: 250px;
-            background-color: #fff;
-            border-left: 2px solid #e0e0e0; /* Alterado para borda à esquerda */
-            padding: 4em 20px;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05); /* Sombra à esquerda */
-            position: sticky;
-            top: 0; /* Fixa a barra ao topo da página ao rolar */
-            height: 100vh; /* Ajusta a altura para ocupar a tela toda */
-            overflow-y: auto; /* Adiciona barra de rolagem se necessário */
-            text-align: center;
-    
-            h3 {
-                margin-bottom: 20px;
-                font-size: 1.6em;
-                font-weight: bold;
-                color: #055216;
-            }
-    
-            .sidebar-nav {
-                ul {
-                    list-style: none;
-    
-                    li {
-                        margin-bottom: 10px;
-    
-                        a {
-                            display: block;
-                            padding: 8px 12px;
-                            border-radius: 4px;
-                            background-color: #e0f2e0;
-                            font-weight: bold;
-                            color: #0a431d;
-    
-                            &:hover {
-                                background-color: #cfe9cf;
-                                color: #055216;
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -165,7 +123,7 @@ html {
             .SeçõesContainer {
                 .Seções {
                     .SeçõesImg {
-                        img {
+                        img, iframe {
                             width: 100%;
                         }   
                     }
@@ -216,17 +174,6 @@ html {
                         }
                     }
                 }
-            }
-    
-            .sidebar {
-                width: 100%;
-                height: auto;
-                border-left: none;
-                border-top: 2px solid #e0e0e0;
-                box-shadow: none;
-                position: relative;
-                top: auto;
-                order: 1;
             }
         }
     }

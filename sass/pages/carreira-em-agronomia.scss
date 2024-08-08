@@ -1,0 +1,99 @@
+@import "../variables/colors/colors.scss";
+
+@import "../variables/common/breakpoint.scss";
+
+@import "../variables/fonts/fonts.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    font-family: 'Montserrat', sans-serif;
+
+    .CarreiraSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .CarreiraContent {
+            position: absolute;
+            color: white;
+            z-index: 10;
+            padding: 0 2em;
+            text-align: center;
+            width: 70%;
+
+            .CarreiraTitle {
+                font-size: 3.4em;
+                font-weight: 600;
+            }
+
+            .CarreiraDescription {
+                font-size: 1.2em;
+            }
+        }
+
+        .CarreiraImage {
+            width: 100%;
+
+            img {
+                width: 100%; /*A imagem ocupará 100% da largura do site*/
+                height: 25em; /*Altura fixa de 20em*/
+                object-fit: cover; /*A imagem manterá a proporção e cortará o excesso para preencher a altura*/
+                filter: brightness(0.5);
+            }
+        }
+    }
+
+    .main-content {
+        display: flex;
+
+        .detailsPage {
+
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+
+            .detailsCards {
+                width: 100%;
+                background-color: $dark-olive-green;
+                margin: 0 auto;
+                font-family: "Raleway", sans-serif;
+                color: white;
+
+                .detailsContent {
+                    width: 60em;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    .detailsTitle {
+                        font-weight: 800;
+                        font-size: 2.5em;
+                        padding: 0.4em 0.4em 0 0.4em;
+                    }
+
+                    .detailsDescription, .detailsList {
+                        font-size: 1.4em;
+                    }
+
+                    .detailsList {
+                        list-style: disc;
+                        margin-left: 2em;
+
+                        .detailsTerm {
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                &:nth-child(even) {
+                    background-color: $light-cream;
+                    color: $vivid-green;
+                }
+            }
+        }
+    }
+}
