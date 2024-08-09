@@ -102,11 +102,25 @@ html {
 }
 
 @media (max-width: 1000px) {
+  .main-container .CarreiraSection .CarreiraContent {
+    width: 100%;
+  }
+  .main-container .CarreiraSection .CarreiraContent .CarreiraTitle {
+    line-height: 1;
+  }
   .main-container .main-content .detailsPage .detailsCards .detailsContent .detailsDescription, .main-container .main-content .detailsPage .detailsCards .detailsContent .detailsList {
     font-size: 1.2em;
   }
 }
 @media (max-width: 768px) {
+  .main-container .CarreiraSection .CarreiraContent .CarreiraTitle {
+    font-size: 2.4em;
+    height: 2.2em;
+  }
+  .main-container .CarreiraSection .CarreiraContent .CarreiraDescription {
+    font-size: 1.2em;
+    text-align: justify;
+  }
   .main-container .main-content {
     flex-direction: column;
   }

@@ -142,6 +142,9 @@ main {
   }
 }
 @media (max-width: 425px) {
+  .PrincipalContainer .OverViewCard {
+    margin: 3em 2.6em;
+  }
   .PrincipalContainer .OverViewCard .OverViewCardContent .OverViewCardDescription {
     font-size: 1.2rem;
     line-height: 1.45rem;
