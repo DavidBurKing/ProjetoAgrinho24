@@ -1,2 +1,0 @@
-npx sass --watch sass/pages/index.scss:css/pages/index.css        index
-
