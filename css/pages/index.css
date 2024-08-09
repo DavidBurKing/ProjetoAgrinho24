@@ -153,6 +153,7 @@ main {
     margin: 3em 2.6em;
   }
   .PrincipalContainer .OverViewCard .OverViewCardContent .OverViewCardDescription {
+    text-align: justify;
     font-size: 1.2rem;
     line-height: 1.45rem;
   }

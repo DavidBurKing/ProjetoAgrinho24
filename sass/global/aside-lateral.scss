@@ -1,13 +1,13 @@
 .sidebar {
     width: 250px;
     background-color: #fff;
-    border-left: 2px solid #e0e0e0; /* Alterado para borda à esquerda */
+    border-left: 2px solid #e0e0e0;
     padding: 10em 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05); /* Sombra à esquerda */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
     position: sticky;
-    top: 0; /* Fixa a barra ao topo da página ao rolar */
-    height: 100vh; /* Ajusta a altura para ocupar a tela toda */
-    overflow-y: auto; /* Adiciona barra de rolagem se necessário */
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
     text-align: center;
 
     h3 {

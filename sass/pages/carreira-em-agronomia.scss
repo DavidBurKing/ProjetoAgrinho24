@@ -38,9 +38,9 @@ html {
             width: 100%;
 
             img {
-                width: 100%; /*A imagem ocupará 100% da largura do site*/
-                height: 25em; /*Altura fixa de 20em*/
-                object-fit: cover; /*A imagem manterá a proporção e cortará o excesso para preencher a altura*/
+                width: 100%;
+                height: 25em;
+                object-fit: cover;
                 filter: brightness(0.5);
             }
         }
@@ -236,7 +236,7 @@ html {
 
                     &:focus-within,
                     &:hover {
-                        max-height: 120em; // Expande para 100% da altura da visualização
+                        max-height: 120em;
                         transition: max-height 0.5s ease-out;
                     }
                 }
@@ -246,6 +246,16 @@ html {
         .Entrevista {
             .EntrevistaDescription {
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .main-container {
+        .Entrevista {
+            .EntrevistaDescription {
+                font-size: 1.2em;
             }
         }
     }
