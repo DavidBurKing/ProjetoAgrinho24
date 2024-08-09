@@ -81,10 +81,10 @@ header nav .menu-wrapper ul li a:hover {
   color: #009FFF;
 }
 header nav .menu-wrapper ul:hover li a:not(:hover) {
-  color: #2b3137;
+  color: #15803D;
 }
 header nav .menu-wrapper ul:hover li:nth-child(5) a:not(:hover) {
-  color: #2b3137;
+  color: #15803D;
 }
 header nav .menu-wrapper .menu-icon {
   display: none;

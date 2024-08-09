@@ -102,10 +102,10 @@ header {
     
                 &:hover {
                     li a:not(:hover) {
-                        color: $gray;
+                        color: $dark-green;
                     }
                     li:nth-child(5) a:not(:hover) {
-                        color: $gray;
+                        color: $dark-green;
                     }
                 }
             }
