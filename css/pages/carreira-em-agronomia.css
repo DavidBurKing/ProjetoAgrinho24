@@ -56,13 +56,22 @@ html {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
   color: white;
+  box-shadow: -1px 1px 20px 0px black;
+  max-height: 16em;
+  overflow: hidden;
+  transition: max-height 0.8s linear;
+  display: flex;
+}
+.main-container .main-content .detailsPage .detailsCards:hover, .main-container .main-content .detailsPage .detailsCards:focus-within {
+  max-height: 100em;
 }
 .main-container .main-content .detailsPage .detailsCards .detailsContent {
-  width: 60em;
+  max-width: 60em;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 50%;
 }
 .main-container .main-content .detailsPage .detailsCards .detailsContent .detailsTitle {
   font-weight: 800;
@@ -79,9 +88,53 @@ html {
 .main-container .main-content .detailsPage .detailsCards .detailsContent .detailsList .detailsTerm {
   font-weight: 700;
 }
+.main-container .main-content .detailsPage .detailsCards .detailsImg {
+  width: 30%;
+}
+.main-container .main-content .detailsPage .detailsCards .detailsImg img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
 .main-container .main-content .detailsPage .detailsCards:nth-child(even) {
   background-color: #FEEDCB;
   color: #239D12;
+}
+
+@media (max-width: 1000px) {
+  .main-container .main-content .detailsPage .detailsCards .detailsContent .detailsDescription, .main-container .main-content .detailsPage .detailsCards .detailsContent .detailsList {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 768px) {
+  .main-container .main-content {
+    flex-direction: column;
+  }
+  .main-container .main-content .detailsPage {
+    order: 2;
+  }
+  .main-container .main-content .detailsPage .detailsCards {
+    flex-direction: column;
+  }
+  .main-container .main-content .detailsPage .detailsCards .detailsContent {
+    width: 100%;
+    padding: 1.5em;
+  }
+  .main-container .main-content .detailsPage .detailsCards .detailsContent .detailsTitle {
+    font-size: 2em;
+    text-align: center;
+  }
+  .main-container .main-content .detailsPage .detailsCards .detailsContent .detailsDescription {
+    text-align: justify;
+  }
+  .main-container .main-content .detailsPage .detailsCards .detailsImg {
+    order: 2;
+    width: 100%;
+  }
+  .main-container .main-content .detailsPage .detailsCards:focus-within, .main-container .main-content .detailsPage .detailsCards:hover {
+    max-height: 120em;
+    transition: max-height 0.5s ease-out;
+  }
 }
 
 /*# sourceMappingURL=carreira-em-agronomia.css.map */

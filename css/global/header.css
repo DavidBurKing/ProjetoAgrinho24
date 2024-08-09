@@ -96,7 +96,7 @@ header nav .menu-wrapper .menu-icon img {
 }
 
 main {
-  padding: 5em 0 0 0;
+  padding: 5em 0em 0em 0em;
 }
 
 @media (max-width: 1000px) {
@@ -133,7 +133,7 @@ main {
     z-index: 10;
   }
   main {
-    padding: 5.5em 0;
+    padding: 5.5em 0em 0em 0em;
   }
 }
 
