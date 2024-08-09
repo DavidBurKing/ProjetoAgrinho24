@@ -28,11 +28,6 @@ header nav .menu-wrapper {
 }
 header nav .menu-wrapper .logo {
   padding: 0em 0.4em;
-  /*position: fixed;
-
-  top: 4.5%; 7%
-  left: 50%;
-  transform: translateX(-50%);*/
 }
 header nav .menu-wrapper .logo a {
   font-family: "Montserrat", sans-serif;
@@ -73,7 +68,7 @@ header nav .menu-wrapper ul li a {
   background-repeat: no-repeat;
   background-size: 0% 100%;
   background-position-x: right;
-  transition: background-size 450ms, color 450ms; /*1s = 1000ms*/
+  transition: background-size 450ms, color 450ms;
 }
 header nav .menu-wrapper ul li a:hover {
   background-size: 100% 100%;
