@@ -20,7 +20,7 @@ html {
 }
 .main-container .TecnologiaSection .TecnologiaContent {
   position: absolute;
-  color: white;
+  color: #ffffff;
   z-index: 10;
   padding: 0 2em;
   text-align: center;
@@ -37,9 +37,9 @@ html {
   width: 100%;
 }
 .main-container .TecnologiaSection .TecnologiaImage img {
-  width: 100%; /*A imagem ocupará 100% da largura do site*/
-  height: 25em; /*Altura fixa de 20em*/
-  object-fit: cover; /*A imagem manterá a proporção e cortará o excesso para preencher a altura*/
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
   filter: brightness(0.5);
 }
 .main-container .main-content {
@@ -70,6 +70,7 @@ html {
   border-radius: 1em;
   object-fit: cover;
   margin: 0 auto;
+  box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.2117647059);
 }
 .main-container .main-content .SeçõesContainer .Seções .SeçõesImg .SeçõesTitle {
   padding: 0 0.6em;
@@ -125,6 +126,9 @@ html {
   }
   .main-container .main-content .SeçõesContainer .Seções .SeçõesImg .SeçõesTitle {
     font-size: 2em;
+  }
+  .main-container .main-content .SeçõesContainer .Seções .SeçõesImg img, .main-container .main-content .SeçõesContainer .Seções .SeçõesImg iframe {
+    min-width: 100%;
   }
   .main-container .main-content .SeçõesContainer .Seções .SeçõesContent .SeçõesDescription {
     font-size: 1.2em;

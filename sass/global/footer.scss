@@ -11,14 +11,14 @@ footer {
     padding: 1.5rem;
     
     background-color: $dark-olive-green;
-    color: white;
+    color: $white;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 
     .footerContent {
         .footerTitle {
             font-size: 1.75rem; //28px
-            color: brown;
+            color: $brown;
 
             .tech {
                 color: $brilliant-azure;
@@ -32,8 +32,8 @@ footer {
             linear-gradient(
                 transparent 0%,
                 transparent 90%,
-                white 93%,
-                white 100%
+                $white 93%,
+                $white 100%
             );
         
             background-repeat: no-repeat;
@@ -85,7 +85,7 @@ footer {
             display: block;
             width: 100%;
             height: 2px;
-            background-color: white;
+            background-color: $white;
         }
     
         .footerNav {

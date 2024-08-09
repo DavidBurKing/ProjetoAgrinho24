@@ -11,20 +11,20 @@ footer {
   align-items: center;
   padding: 1.5rem;
   background-color: #505F04;
-  color: white;
+  color: #ffffff;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
 }
 footer .footerContent .footerTitle {
   font-size: 1.75rem;
-  color: brown;
+  color: #a52a2a;
 }
 footer .footerContent .footerTitle .tech {
   color: #009FFF;
 }
 footer .footerContent a {
   font-size: 1.0625rem;
-  background-image: linear-gradient(transparent 0%, transparent 90%, white 93%, white 100%);
+  background-image: linear-gradient(transparent 0%, transparent 90%, #ffffff 93%, #ffffff 100%);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   background-position-x: right;
@@ -60,7 +60,7 @@ footer .footerNav div:hover a:not(:hover) {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: #ffffff;
   }
   footer .footerNav {
     padding: 1em 0 0 0;

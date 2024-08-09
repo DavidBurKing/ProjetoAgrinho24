@@ -13,7 +13,7 @@
     <link rel="icon" href="../img/icon.png">
     
     <script src="../functions/global/header.js"></script>
-    <script src="../functions/pages/scroll-suave.js"></script>
+    <script src="../functions/global/scroll-suave.js"></script>
 
     <title>Carreira em Agronomia</title>
 </head>
@@ -50,13 +50,13 @@
                 </p>
             </div>
             <figure class="CarreiraImage">
-                <img src="../img/tecnologia-agro.jpg" alt="">
+                <img src="../img/estudos-rural.jpg" alt="">
             </figure>
         </section>
 
         <section class="main-content">
             <article class="detailsPage">
-                <section class="detailsCards">
+                <section class="detailsCards" id="agronomy">
                     <div class="detailsContent">
                         <h2 class="detailsTitle">
                             O que é Agronomia?
@@ -87,14 +87,14 @@
                         <div class="overlay"></div>
                     </div>
                     <figure class="detailsImg">
-                        <img src="../img/agricultura-de-precisao.jpg" alt="">
+                        <img src="../img/agricultura.jpg" alt="">
                     </figure>
                     <div class="transparente"></div>
                 </section>
 
-                <section class="detailsCards">
+                <section class="detailsCards" id="work areas">
                     <figure class="detailsImg">
-                        <img src="../img/agricultura-de-precisao.jpg" alt="">
+                        <img src="../img/maquinario.jpg" alt="">
                     </figure>
                     <div class="detailsContent">
                         <h2 class="detailsTitle">
@@ -106,7 +106,7 @@
                     </div>
                 </section>
                 
-                <section class="detailsCards">
+                <section class="detailsCards" id="education-and-skills">
                     <div class="detailsContent">
                         <h2 class="detailsTitle">
                             Formação e Habilidades
@@ -130,11 +130,14 @@
                         </ul>
                     </div>
                     <figure class="detailsImg">
-                        <img src="" alt="Imagem ilustrativa sobre formação e habilidades em agronomia">
+                        <img src="../img/mulher-rural.jpg" alt="Imagem ilustrativa sobre formação e habilidades em agronomia">
                     </figure>
                 </section>
 
-                <section class="detailsCards">
+                <section class="detailsCards" id="career-outlook">
+                    <figure class="detailsImg">
+                        <img src="../img/biotecnologia-na-agricultura.jpg" alt="Imagem ilustrativa sobre a perspectiva de carreira em agronomia">
+                    </figure>
                     <div class="detailsContent">
                         <h2 class="detailsTitle">
                             Perspectiva de Carreira
@@ -143,9 +146,6 @@
                             A carreira em agronomia oferece boas perspectivas, com uma demanda crescente por profissionais qualificados à medida que o setor agrícola evolui e se torna mais tecnológico e sustentável. Com a expansão das práticas de agricultura de precisão e a necessidade de enfrentar desafios ambientais e de segurança alimentar, há diversas oportunidades de atuação em empresas agrícolas, instituições de pesquisa, organizações governamentais e consultorias especializadas. A evolução da tecnologia e a crescente conscientização sobre a sustentabilidade criam um ambiente dinâmico, com possibilidades de avanço para aqueles que buscam especialização e desenvolvimento contínuo na área.
                         </p>
                     </div>
-                    <figure class="detailsImg">
-                        <img src="" alt="Imagem ilustrativa sobre a perspectiva de carreira em agronomia">
-                    </figure>
                 </section>                
             </article>
 
@@ -153,14 +153,55 @@
                 <h3>Atalhos Rápidos</h3>
                 <nav class="sidebar-nav">
                     <ul>
-                        <li><a href="#precision-farming">O que é Agronomia?</a></li>
-                        <li><a href="#drones">Áreas de Atuação</a></li>
-                        <li><a href="#iot">Formação e Habilidades</a></li>
-                        <li><a href="#big-data">Big Data</a></li>
+                        <li><a href="#agronomy">O que é Agronomia?</a></li>
+                        <li><a href="#work-areas">Áreas de Atuação</a></li>
+                        <li><a href="#education-and-skills">Formação e Habilidades</a></li>
+                        <li><a href="#career-outlook">Perspectiva de Carreira</a></li>
                     </ul>
                 </nav>
             </aside>
         </section>
+
+        <section class="Entrevista">
+            <h1 class="EntrevistaTitle">
+                Entrevista!
+            </h1>
+            <article class="EntrevistaVideo">
+                <video class="" width="640" height="360" controls loop>
+                    <source src="../video/entrevista.mp4" type="video/mp4">
+                    <source src="../video/entrevista.ogv" type="video/ogg">
+                    <source src="../video/entrevista.webm" type="video/webm">
+                </video>
+                <a class="EntrevistaCredits" href="https://www.instagram.com/brenoribeiroo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    Créditos: <span>@brenoribeiroo</span>
+                </a>
+            </article>
+            <p class="EntrevistaDescription">
+                Confira a <span>entrevista exclusiva</span> com <span>Breno Rafael Ribeiro</span>, Engenheiro Agrônomo da Seara, onde ele compartilha sua trajetória na agronomia, suas expectativas para o futuro e muito mais.
+            </p>
+            <p class="EntrevistaDescription">
+                Este vídeo foi criado <span>especialmente para este projeto</span>, oferecendo uma visão pessoal e inspiradora sobre a carreira na agronomia!
+            </p>
+        </section>
     </main>
+
+    <footer>
+        <nav class="footerContent">
+            <h1 class="footerTitle">Terra<span class="tech">Tech</span></h1>
+            <a href="https://github.com/DavidBurKing" target="_blank">
+                © 2023 DaviRibeiroBerçocano (Dev)
+            </a>
+        </nav>
+
+        <div class="footerSeparator"></div>
+
+        <nav class="footerNav">
+            <div>
+                <a href="index.html">Início</a>
+                <a href="pages/tecnologia-agro.html">Tecnologia na Agropecuária</a>
+                <a href="pages/carreira-em-agronomia.html">Carreira em Agronomia</a>
+            </div>
+        </nav>
+    </footer>
 </body>
 </html>
